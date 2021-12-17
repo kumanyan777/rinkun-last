@@ -190,7 +190,7 @@ transform: translateY(0);
 
 /* 他の番組 */
 
-.other-video {
+.other-image {
   display: flex;
   justify-content: center;
   /* margin-bottom: 300px; */

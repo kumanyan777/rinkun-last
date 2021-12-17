@@ -1,0 +1,361 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+#splash {
+  /*fixedで全面に固定*/
+position: fixed;
+width: 100%;
+height: 100%;
+z-index: 999;
+background: rgb(233, 197, 150);
+background-size: cover;
+text-align:center;
+color:#fff;
+}
+
+/* Loading画像中央配置　*/
+#splash_logo {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+/* Loading アイコンの大きさ設定　*/
+#splash_logo img {
+width:700px;
+}
+
+/* fadeUpをするアイコンの動き */
+
+.fadeUp{
+animation-name: fadeUpAnime;
+animation-duration:0.5s;
+animation-fill-mode:forwards;
+opacity: 0;
+}
+
+@keyframes fadeUpAnime{
+from {
+  opacity: 0;
+transform: translateY(100px);
+}
+
+to {
+  opacity: 1;
+transform: translateY(0);
+}
+}
+
+
+
+
+
+.all {
+  background-image: url(haikei.png);
+  background-size: cover;
+  width: 100%;
+}
+
+.all-contents {
+  /* width: 1000px; */
+  margin: auto;
+}
+
+
+/* ヘッダーイメージ */
+
+.main-image img {
+  width: 100%;
+}
+
+/* ヘッダー */
+
+.header {
+  display: flex;
+  /* position: fixed; */
+  /* top: 0; */
+  background-color: #f2d3d3;
+  width: 100%;
+}
+
+
+
+
+
+
+
+.nav {
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+.nav ul{
+  display: flex;
+}
+
+.nav li {
+  list-style: none;
+  margin-right: 40px;
+  margin-top: 15px;
+}
+
+.nav a {
+  color: #707070;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.one a:hover {
+  color: red;
+}
+
+.two a:hover {
+  color: blue;
+}
+
+.three a:hover {
+  color: green;
+}
+
+
+
+/* タイトルメイン */
+
+
+
+.h1 {
+  margin-bottom: 70px;
+}
+
+
+.title-main {
+  width: 60%;
+  margin: auto;
+}
+
+
+.title-main h2 {
+  margin-top: 150px;
+  margin-bottom: 30px;
+  font-size: 30px;
+  color: #707070;
+}
+
+.title-main h1 {
+  margin-bottom: 70px;
+  font-size: 35px;
+}
+
+.title-main p {
+  letter-spacing: 0.5em;
+  font-size: 16px;
+  color: #707070;
+}
+
+
+
+/* 最近の番組 */
+
+.main h1 {
+  text-align: center;
+  margin-top: 10%;
+  font-size: 35px;
+  font-weight:normal;
+}
+
+.main-video {
+  text-align: center;
+  margin: 5% 5%;
+}
+
+.main-video h4 {
+  font-size: 30px;
+  margin-top: 3%;
+  font-weight:normal;
+}
+
+.main-video p {
+  text-align: center;
+  margin: 3% 0;
+  color: #707070;
+}
+
+.main-video video {
+  width: 60%;
+}
+
+
+
+/* 他の番組 */
+
+.other-video {
+  display: flex;
+  justify-content: center;
+  /* margin-bottom: 300px; */
+  width: 60%;
+  margin: auto;
+}
+
+.section {
+  width: 30%;
+  height: 350px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.section img {
+  text-align: center;
+  width: 90%;
+}
+
+.section h3 {
+  text-align: center;
+  margin-top: 5px;
+  color: #707070;
+  font-weight:normal;
+}
+
+.section h2 {
+  margin: 5% 7%;
+  font-size: 20px;
+  font-weight:normal;
+}
+
+
+/* キャラクター紹介 */
+
+.character {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+.character h1 {
+  margin-bottom: 5%;
+  font-size: 35px;
+  font-weight:normal;
+}
+
+.character-image img {
+  width: 60%;
+  margin-bottom: 5%;
+}
+
+
+/* リンク画像 */
+
+.help-link {
+  width: 90%;
+  margin: auto;
+}
+
+.help-link h1 {
+  margin-bottom: 5%;
+}
+
+.help-link-image {
+  display: flex;
+}
+
+.kobeumi {
+  text-align: center;
+}
+
+.kobeumi h3 {
+  margin-bottom: 10px;
+}
+
+.gogreen {
+  text-align: center;
+}
+
+.gogreen h3 {
+  margin-bottom: 10px;
+}
+
+.kobeumi-image {
+  width: 90%;
+  overflow: hidden;
+}
+
+.kobeumi img {
+  width: 90%;
+  overflow:hidden;
+}
+
+.kobeumi img:hover {
+  transform: scale(1.1);
+  transition:1s all;
+  opacity: 0.5;
+}
+
+.gogreen-image {
+  width: 90%;
+  overflow: hidden;
+}
+
+.gogreen img {
+  width: 90%;
+  overflow:hidden;
+}
+
+.gogreen img:hover {
+  transform: scale(1.1);
+  transition:1s all;
+  opacity: 0.5;
+}
+
+
+/* リンク資料 */
+.link-siryou {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+}
+
+.link-siryou h1 {
+  margin-bottom: 5%;
+  font-size: 35px;
+  font-weight:normal;
+}
+
+.link-siryou p {
+  margin-bottom:  10px;
+  border-bottom:solid;
+  border-width : 1px;
+}
+
+.link-siryou a {
+  color: black;
+  text-decoration: none;
+}
+
+.link-siryou a:hover {
+  color: red;
+}
+
+
+
+/* フッター */
+
+.footer {
+  text-align: center;
+  margin: 200px 0 0 0;
+  background-color: rgb(233, 197, 150);
+  padding: 100px;
+}
+
+.footer a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: red;
+}
+
+
